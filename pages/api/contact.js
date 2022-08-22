@@ -10,13 +10,13 @@ export default function contact(req, res) {
   let nodemailer = require("nodemailer");
 
   const transporter = nodemailer.createTransport({
-    port: 465,
+    port: 587,
     host: "smtp.mail.yahoo.com",
     auth: {
       user: process.env.NEXT_PUBLIC_SMTP_SENDER,
       pass: process.env.NEXT_PUBLIC_SMTP_PASS,
     },
-    secure: true,
+    secure: false,
     logger: true,
   });
 
