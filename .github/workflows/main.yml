@@ -27,7 +27,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.1
         with:
-          server: bat-max.atthost24.pl
-          username: bat-max_przemek
+          server: test-batmax.atthost24.pl
+          username: test-batmax
           password: ${{ secrets.PASSWORD }}
           server-dir: websites/frontend/
